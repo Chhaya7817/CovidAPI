@@ -16,7 +16,8 @@ var data;
 function displayData(){
   for (let i of data.Countries)
  {
- if(i.Country=='India')
+  var c=document.getElementById("country").value;
+ if(i.Country==c)
  {
  document.getElementById("cname").textContent=i.Country;
  document.getElementById("date").textContent=new Date().toDateString();
